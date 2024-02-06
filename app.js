@@ -45,7 +45,6 @@ function setup_onClick(name){
 
 document.addEventListener("DOMContentLoaded",function(){
     let btn = document.createElement("button");
-    let clone;
     let buttons = [];
     buttons.push("^");
     buttons.push("C");
