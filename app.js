@@ -30,8 +30,9 @@ function setup_onClick(name){
         else if(last_op=="-") buffer_res-=Number(buffer_cur);
         else if(last_op=="*") buffer_res*=Number(buffer_cur);
         else if(last_op=="/") buffer_res/=Number(buffer_cur);
-        buffer_cur = "";
-        document.getElementById("display").innerHTML = buffer_res;
+        buffer_cur = buffer_res;
+        buffer_res = "";
+        document.getElementById("display").innerHTML = buffer_cur;
     } else if(name=="."){
         if(buffer_cur.indexOf(".")>=0)return;
         buffer_cur += ".";
