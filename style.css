@@ -1,0 +1,18 @@
+
+.calc{
+    height: 10%;
+    width: 20%;
+    display: grid;
+    grid-template-rows: fit-content auto;
+}
+
+.display{
+    text-align: right;
+}
+
+.button-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto;
+}
