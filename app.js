@@ -29,7 +29,7 @@ function setup_onClick(name){
         if(buffer_cur.indexOf(".")>=0)return;
         buffer_cur += ".";
     }else if(Number(name)!=NaN)   buffer_cur += ""+name;
-    document.getElementById("display").innerHTML = buffer_cur!=""?buffer_cur:buffer_res;
+    document.getElementById("display").innerHTML = buffer_cur!=""?buffer_cur:(buffer_res!=""?buffer_res:"0");
 }
 
 document.addEventListener("DOMContentLoaded",function(){
