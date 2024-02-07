@@ -5,11 +5,12 @@
     height: 90%;
     width: 90%;
     display: grid;
-    grid-template-rows: fit-content auto;
+    grid-template-rows: 20% auto;
 }
 
 .display{
     text-align: right;
+    font-size: 10vh;
 }
 
 .button-container{
