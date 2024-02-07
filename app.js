@@ -11,9 +11,10 @@ function op(){
 }
 
 function setup_onClick(name){
-    if(name=="C")
+    if(name=="C"){
         buffer_cur = "";
-    else if(name=="DEL")
+        buffer_res = "";
+    }else if(name=="DEL")
         buffer_cur = (buffer_cur+"").substring(0, (buffer_cur+"").length - 1);
     else if(name=="/"||name=="*"||name=="+"||name=="-"||name=="^"){
         last_op = name;
